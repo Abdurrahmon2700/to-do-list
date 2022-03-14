@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <header class="box__header">
+        <h1 class="box__title">Just to do it </h1>
+      </header>
+      <div>
+        <h2 id="" class="box__clock">9:00</h2>
+        <span class="box__data">Monday 12.03</span>
+      </div>
+        <ul class="box__list" id="items">
+          <li id="item" class="box__item">
+            <div class="box___mark"></div>
+            <p class="box__text">kitob o'qidim</p>
+            <button onclick="myFunction()">
+              <i id="crash" class='box__crash bx bx-trash'></i>
+              <i class='bx bx-check-circle'></i>
+            </button>
+          </li>
+          <li id="item" class="box__item">
+            <div class="box___mark"></div>
+            <p class="box__text">kitob o'qidim</p>
+            <button onclick="myFunction()">
+              <i id="crash" class='box__crash bx bx-trash'></i>
+              <i class='bx bx-check-circle'></i>
+            </button>
+          </li>
+          <li id="item" class="box__item">
+            <div class="box___mark"></div>
+            <p class="box__text">kitob o'qidim</p>
+            <button onclick="myFunction()">
+              <i id="crash" class='box__crash bx bx-trash'></i>
+            </button> 
+            
+          </li>
+        </ul>
+      <form action="/action_page.php">
+        <div class="box__input-part">
+          <input required class="box__input" type="text" placeholder="Enter item">
+          <button class="box__add" type="submit">ADD</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div>
+    <p id="demo"></p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
